@@ -6,6 +6,7 @@ import { BiSearch } from "react-icons/bi"
 import { usePathname } from "next/navigation";
 import { useMemo } from "react";
 import Box from "./Box";
+import SidebarItem from "./SidebarItem";
 
 interface SidebarProps {
   children: React.ReactNode
