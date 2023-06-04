@@ -1,3 +1,5 @@
+
+import Sidebar from '../components/Sidebar'
 import './globals.css'
 
 
@@ -13,7 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Sidebar>
+          {children}
+        </Sidebar>
+          
+      </body>
     </html>
   )
 }
