@@ -1,6 +1,8 @@
-"use client"
+"use client";
 
-import { usePathname } from "next/navigation"
+import { HiHome } from "react-icons/hi";
+
+import { usePathname } from "next/navigation";
 import { useMemo } from "react";
 
 interface SidebarProps {
@@ -15,6 +17,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 
   const routes = useMemo(() => [
     {
+      icon: HiHome,
       label: 'Home',
       active: pathname !== '/search',
       href: '/',
