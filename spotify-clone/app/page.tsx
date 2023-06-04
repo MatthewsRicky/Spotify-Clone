@@ -4,6 +4,8 @@ const font = Figtree({subsets: ['latin']})
 
 export default function Home() {
   return (
-    <div>Hello Spotify</div>
+    <div className="text-green-500">
+       Hello Spotify
+    </div>
   )
 }
