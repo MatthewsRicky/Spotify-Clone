@@ -1,8 +1,21 @@
+import { IconType } from "react-icons"
 
-const SidebarItem = () => {
+interface SidebarItemProps {
+  icon: IconType;
+  label: string;
+  active?: boolean;
+  href: string;
+}
+
+const SidebarItem: React.FC<SidebarItemProps> = ({
+  icon,
+  label,
+  active,
+  href
+}) => {
   return (
     <div>SidebarItem</div>
   )
 }
 
-export default SidebarItem
+export default SidebarItem;
