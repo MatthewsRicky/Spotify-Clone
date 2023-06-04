@@ -1,6 +1,7 @@
 "use client";
 
 import { HiHome } from "react-icons/hi";
+import { BiSearch } from "react-icons/bi"
 
 import { usePathname } from "next/navigation";
 import { useMemo } from "react";
@@ -23,6 +24,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       href: '/',
     },
     {
+      icon: BiSearch,
       label: 'Search',
       active: pathname === '/search',
       href: '/search'
