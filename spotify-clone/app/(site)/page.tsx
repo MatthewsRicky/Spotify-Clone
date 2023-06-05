@@ -1,4 +1,5 @@
 import { Figtree } from "next/font/google";
+import Header from "@/src/components/Header";
 
 const font = Figtree({subsets: ['latin']})
 
@@ -12,7 +13,9 @@ export default function Home() {
       overflow-x-hidden
       overflow-y-auto
       ">
-       
+       <Header>
+        Headerrrr
+       </Header>
     </div>
   )
 }
