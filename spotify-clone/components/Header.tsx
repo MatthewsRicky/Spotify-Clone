@@ -32,7 +32,10 @@ const handleLogout = () => {
       <div className="w-full mb-4 flex items-center justify-between">
         <div className="hidden md:flex gap-x-2 items-center">
           <button>
-            <RxCaretLeft />
+            <RxCaretLeft 
+              size={35}
+              className="text-white"
+            />
           </button>
         </div>
       </div>
