@@ -1,6 +1,7 @@
  "use client"
 
  import { TbPlaylist} from "react-icons/tb";
+ import { AiOutlinePlus } from "react-icons/ai";
  
 
   const Library = () => {
@@ -16,7 +17,9 @@
             Your Library
           </p>
         </div>
+        <AiOutlinePlus />
       </div>
+
     </div>
   )
 }
