@@ -54,6 +54,13 @@ const handleLogout = () => {
             <BiSearch className="text-black" size={20}/>
           </button>
         </div>
+        <div className="flex justify0-between items-center gap-x-4">
+          <>
+            <div>
+              <Button />
+            </div>
+          </>
+        </div>
       </div>
     </div>
   )
