@@ -77,6 +77,7 @@ const handleLogout = () => {
           </>
         </div>
       </div>
+      {children}
     </div>
   )
 }
