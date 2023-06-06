@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { twMerge } from "tailwind-merge";
-import { RxCaretLeft } from "react-icons/rx";
+import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
 
 interface HeaderProps{
   children: React.ReactNode
@@ -33,6 +33,12 @@ const handleLogout = () => {
         <div className="hidden md:flex gap-x-2 items-center">
           <button className="rounded-full bg-black flex items-center justify-center hover:opacity-75 transition">
             <RxCaretLeft 
+              size={35}
+              className="text-white"
+            />
+          </button>
+          <button className="rounded-full bg-black flex items-center justify-center hover:opacity-75 transition">
+            <RxCaretRight 
               size={35}
               className="text-white"
             />
