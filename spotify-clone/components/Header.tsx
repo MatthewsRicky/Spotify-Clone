@@ -63,6 +63,11 @@ const handleLogout = () => {
                 Sign up
               </Button>
             </div>
+            <div>
+              <Button>
+                Log in
+              </Button>
+            </div>
           </>
         </div>
       </div>
