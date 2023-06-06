@@ -20,6 +20,9 @@ export default function Home() {
           >
             Welcome back
           </h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-4-cols mt-4">
+            
+          </div>
         </div>
        </Header>
     </div>
