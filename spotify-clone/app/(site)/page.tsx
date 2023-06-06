@@ -23,6 +23,7 @@ export default function Home() {
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-4-cols mt-4">
             <ListItem />
+
           </div>
         </div>
        </Header>
