@@ -29,6 +29,9 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
         transition
       `, className
       )}
+      disabled={diasbled}
+      ref={ref}
+      {...props}
     >
       Sign up
     </button>
