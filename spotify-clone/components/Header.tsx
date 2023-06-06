@@ -59,7 +59,9 @@ const handleLogout = () => {
         <div className="flex justify0-between items-center gap-x-4">
           <>
             <div>
-              <Button />
+              <Button>
+                Sign up
+              </Button>
             </div>
           </>
         </div>
