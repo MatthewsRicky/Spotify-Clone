@@ -18,6 +18,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
         w-full
         rounded-full
         bg-green-500
+        text-black
         border
         border-transparent
         py-3
