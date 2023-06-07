@@ -13,12 +13,12 @@ children: React.ReactNode
 const SupabaseProvider: React.FC<SupabaseProviderProps> = ({
   children
 }) => {
-  const [supabaseClient] = useState(() => {
+  const [supabaseClient] = useState(() => 
     createClientComponentClient<Database>()
-  })
+  )
 
   return (
-    <SessionContextProvider supabasClient={supabaseClient}>
+    <SessionContextProvider supabaseClient={supabaseClient}>
       {children}
     </SessionContextProvider>
   )
