@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { FaPlay } from "react-icons/fa"
 
 interface ListItemProps {
   image: string;
@@ -46,9 +47,12 @@ const ListItem: React.FC<ListItemProps> = ({
           alt="Image"
         />
       </div>
-      <p>
+      <p className="font-medium truncate py-5">
         {name}
       </p>
+      <div className="">
+        <FaPlay />
+      </div>
     </button>
   )
 }
