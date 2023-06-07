@@ -46,6 +46,9 @@ const ListItem: React.FC<ListItemProps> = ({
           alt="Image"
         />
       </div>
+      <p>
+        {name}
+      </p>
     </button>
   )
 }
