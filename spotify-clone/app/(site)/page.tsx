@@ -1,6 +1,7 @@
 import { Figtree } from "next/font/google";
 import Header from "@/src/components/Header";
-import ListItem from "@/src/components/ListItem";
+
+
 
 const font = Figtree({subsets: ['latin']})
 
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <div className="
       bg-neutral-900
-      rouunded-lg
+      rounded-lg
       h-full
       w-full
       overflow-x-hidden
@@ -21,11 +22,8 @@ export default function Home() {
           >
             Welcome back
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 mt-4">
-            <ListItem 
-              image="/images/liked.png"
-              name="Liked Songs"
-            />
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3 mt-4">
+            
           </div>
         </div>
        </Header>
