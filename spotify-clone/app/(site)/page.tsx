@@ -25,7 +25,6 @@ export default function Home() {
             <ListItem 
               image="/images/liked.png"
             />
-
           </div>
         </div>
        </Header>
