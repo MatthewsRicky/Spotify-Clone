@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 interface ListItemProps {
@@ -37,7 +38,9 @@ const ListItem: React.FC<ListItemProps> = ({
         pr-4  
       "
     >
-
+      <div className="relative min-h-[64px] min-w-[64px]">
+        <Image />
+      </div>
     </button>
   )
 }
