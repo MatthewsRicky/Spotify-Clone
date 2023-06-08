@@ -10,7 +10,14 @@ export interface UserDetails {
   payment_method?: Stripe.PaymentMethod[Stripe.PaymentMethod.Type];
 }
 
-ex
+export interface Product {
+  id: string;
+  active?: boolean;
+  name?: string;
+  desctription?: string;
+  image?: string;
+  metadata?: Stripe.Metadata;
+}
 
 export interface Price {
   id: string;
