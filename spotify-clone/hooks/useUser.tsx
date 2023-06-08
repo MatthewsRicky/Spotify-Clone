@@ -2,6 +2,7 @@ import { User } from "@supabase/auth-helpers-nextjs";
 import { createContext } from "react";
 
 import { Subscription, UserDetails } from "../types"
+import { useSessionContext } from "@supabase/auth-helpers-react";
 
 type UserContextType = {
   accessToken: string | null;
@@ -15,3 +16,10 @@ export const UserContext =  createContext<UserContextType | undefined>(
   undefined
 );
 
+export interface Props {
+  [propName:  string]: any;
+};
+
+export const MyUserContextProvider = (props: Props) => {
+  const {} = useSessionContext();
+}
