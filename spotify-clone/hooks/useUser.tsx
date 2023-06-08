@@ -3,7 +3,7 @@ import {
   useSessionContext,
   useUser as useSupaUser 
 } from "@supabase/auth-helpers-react";
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 import { Subscription, UserDetails } from "../types"
 
@@ -30,4 +30,9 @@ export const MyUserContextProvider = (props: Props) => {
     supabaseClient: supabase
   } = useSessionContext();
   const user = useSupaUser();
+  const accessToken = session?.access_token ?? null;
+  const [isLoadingData, setIsLoadingData ] = useState(false);
+  const [userDetails,  setUserDetails] = useState<UserDetails | null>(null);
+  const [subscription, setSubscription] = useState<Subscription | null>(null);
+
 }
