@@ -8,4 +8,9 @@ type UserContextType = {
   userDetails: UserDetails |  null;
   isLoading: boolean;
   subscription: Subscription | null;
-}
+};
+
+export const UserContext =  createContext<UserContextType | undefined>(
+  undefined
+);
+
