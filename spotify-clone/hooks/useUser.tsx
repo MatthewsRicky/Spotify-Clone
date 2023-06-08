@@ -3,7 +3,7 @@ import {
   useSessionContext,
   useUser as useSupaUser 
 } from "@supabase/auth-helpers-react";
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 import { Subscription, UserDetails } from "../types"
 
@@ -42,4 +42,16 @@ export const MyUserContextProvider = (props: Props) => {
       .select('*, prices(*, products(*))')
       .in('status', ['trialing', 'active'])
       .single();
+
+  useEffect(() => {
+    if (user && !isLoadingData && !userDetails && !subscription) {
+      setIsLoadingData(true);
+
+      Promise.allSettled([getUserDetails(), getSubscription()]).then(
+        (results) => {
+          const userDetailsPromise = results[0];
+        }
+      )
+    }
+  }, [])
 }
