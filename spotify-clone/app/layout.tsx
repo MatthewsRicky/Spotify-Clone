@@ -1,5 +1,6 @@
 
 import Sidebar from '../components/Sidebar'
+import SupabaseProvider from '../providers/SupabaseProvider'
 import './globals.css'
 
 
@@ -16,10 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Sidebar>
-          {children}
-        </Sidebar>
-          
+        <SupabaseProvider>
+          <Sidebar>
+            {children}
+          </Sidebar>
+        </SupabaseProvider>
       </body>
     </html>
   )
