@@ -9,7 +9,13 @@ interface ModalProps {
   children: React.ReactNode;
 }
 
-const Modal = () => {
+const Modal: React.FC<ModalProps> = ({
+  isOpen,
+  onChange,
+  title,
+  description,
+  children
+}) => {
   return (
     <div>
       Modal Component
