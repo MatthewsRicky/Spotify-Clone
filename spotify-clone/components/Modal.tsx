@@ -36,7 +36,7 @@ const Modal: React.FC<ModalProps> = ({
           <Dialog.Title className="text-xl text-center font-bold mb-4">
             {title}
           </Dialog.Title>
-          <Dialog.Description>
+          <Dialog.Description className="mb-5 text-sm leading-normal text-center">
             {description}
           </Dialog.Description>
         </Dialog.Content>
