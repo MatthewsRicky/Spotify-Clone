@@ -18,8 +18,14 @@ const Modal: React.FC<ModalProps> = ({
 }) => {
   return (
     <Dialog.Root>
-      
-   </Dialog.Root>
+      <Dialog.DialogOverlay
+        className="bg-neutral-900/90
+          backdrop-blur-sm
+          fixed
+          inset-0
+        "
+      />
+    </Dialog.Root>
   )
 }
 
