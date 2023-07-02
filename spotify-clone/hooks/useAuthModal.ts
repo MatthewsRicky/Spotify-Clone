@@ -6,8 +6,10 @@ interface AuthModalStore {
   onClose: () => void;
 };
 
-const useeAuthModal = create<AuthModalStore>(() => ({
-  isOpen: false;
-  onOpen: () => set!({ isOpen: true });
-  onClose: () => set!({ isOpen: false });
-}))
+const useeAuthModal = create<AuthModalStore>((set) => ({
+  isOpen: false,
+  onOpen: () => set({ isOpen: true }),
+  onClose: () => set({ isOpen: false }),
+}));
+
+export default useeAuthModal;
