@@ -29,7 +29,14 @@ const Modal: React.FC<ModalProps> = ({
           fixed
           inset-0
         "
-      />
+        />
+        <Dialog.Content className="
+          fixed drop-shadow border border-neutral-700 top-[50%] left-[50%]
+          max-h-full h-full md:h-auto md:max-h-[85vh] w-full md:w-[90vw] md:max-w-[450px]
+          translate-x-[-50%] 
+        ">
+
+        </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
   )
