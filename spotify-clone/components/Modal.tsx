@@ -20,14 +20,17 @@ const Modal: React.FC<ModalProps> = ({
     <Dialog.Root
       open={isOpen}
       defaultOpen={isOpen}
+      onOpenChange={onChange}
     >
-      <Dialog.DialogOverlay
+      <Dialog.Portal>
+        <Dialog.DialogOverlay
         className="bg-neutral-900/90
           backdrop-blur-sm
           fixed
           inset-0
         "
       />
+      </Dialog.Portal>
     </Dialog.Root>
   )
 }
