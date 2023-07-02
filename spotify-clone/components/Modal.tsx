@@ -45,7 +45,7 @@ const Modal: React.FC<ModalProps> = ({
           </div>
           <div>
             <Dialog.Close asChild>
-              <button>
+              <button className="text-neutral-400 hover:text-white absolute top-[10px] right-[10px inline-flex h-[25px] w-[25px]">
                 <IoMdClose />
               </button>
             </Dialog.Close>
