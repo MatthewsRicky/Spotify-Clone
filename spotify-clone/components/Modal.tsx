@@ -43,6 +43,13 @@ const Modal: React.FC<ModalProps> = ({
           <div>
             {children}
           </div>
+          <div>
+            <Dialog.Close asChild>
+              <button>
+                <IoMdClose />
+              </button>
+            </Dialog.Close>
+          </div>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
