@@ -31,11 +31,11 @@ const Modal: React.FC<ModalProps> = ({
         "
         />
         <Dialog.Content className="
-          fixed drop-shadow border border-neutral-700 top-[50%] left-[50%]
-          max-h-full h-full md:h-auto md:max-h-[85vh] w-full md:w-[90vw] md:max-w-[450px]
-          translate-x-[-50%] 
+          fixed drop-shadow border border-neutral-700 top-[50%] left-[50%] max-h-full h-full md:h-auto md:max-h-[85vh] w-full md:w-[90vw] md:max-w-[450px] translate-x-[-50%] translate-y-[50%] rounded-md bg-neutral-800 p-[25px] focus:outline-none 
         ">
-
+          <Dialog.Title>
+            {title}
+          </Dialog.Title>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
