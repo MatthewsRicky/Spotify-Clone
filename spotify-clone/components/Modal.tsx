@@ -17,7 +17,10 @@ const Modal: React.FC<ModalProps> = ({
   children
 }) => {
   return (
-    <Dialog.Root>
+    <Dialog.Root
+      open={isOpen}
+      defaultOpen={isOpen}
+    >
       <Dialog.DialogOverlay
         className="bg-neutral-900/90
           backdrop-blur-sm
