@@ -1,4 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog";
+import { Children } from "react";
 import { IoMdClose } from "react-icons/io";
 
 interface ModalProps {
@@ -39,6 +40,9 @@ const Modal: React.FC<ModalProps> = ({
           <Dialog.Description className="mb-5 text-sm leading-normal text-center">
             {description}
           </Dialog.Description>
+          <div>
+            {children}
+          </div>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
