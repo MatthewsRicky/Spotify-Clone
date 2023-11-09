@@ -7,6 +7,7 @@ import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 
 import Button from "./Button";
+import useeAuthModal from "../hooks/useAuthModal";
 
 interface HeaderProps{
   children: React.ReactNode
@@ -17,6 +18,7 @@ const Header: React.FC<HeaderProps> = ({
   children,
   className
 }) => {
+  const authModal = useeAuthModal();
 const router = useRouter();
 
 const handleLogout = () => {
@@ -60,7 +62,7 @@ const handleLogout = () => {
           <>
             <div>
               <Button
-                onClick={() => {}}
+                onClick={authModal.onOpen}
                 className="bg-transparent text-neutral-300 font medium"
               >
                   Sign up
@@ -68,7 +70,7 @@ const handleLogout = () => {
             </div>
             <div>
               <Button
-                onClick={() => {}}
+                onClick={authModal.onOpen}
                 className="bg-white px-6 py-2"
               >
                   Log In
