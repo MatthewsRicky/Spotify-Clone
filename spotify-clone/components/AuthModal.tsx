@@ -3,6 +3,7 @@
 import { useSupabaseClient } from '@supabase/auth-helpers-react';
 
 import Modal from './Modal'
+import { Auth } from '@supabase/auth-ui-react';
 
 const AuthModal = () => {
 
@@ -15,7 +16,9 @@ const AuthModal = () => {
       isOpen
       onChange={() => {}}
     >
-      Auth Modal Children
+     <Auth
+     supabaseClient={supabaseClient} 
+     />
     </Modal>
   )
 }
