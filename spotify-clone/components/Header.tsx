@@ -22,8 +22,11 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
 	const supabaseClient = useSupabaseClient();
 	const { user } = useUser();
 
-	const handleLogout = () => {
-		const { error } = supabaseClient.auth.signOut();
+	const handleLogout = async () => {
+		const { error } = await supabaseClient.auth.signOut();
+
+		//reset any playing songs
+		router.refresh();
 	};
 
 	return (
