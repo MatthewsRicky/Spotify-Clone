@@ -74,22 +74,26 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
 					</button>
 				</div>
 				<div className='flex justify0-between items-center gap-x-4'>
-					<>
-						<div>
-							<Button
-								onClick={authModal.onOpen}
-								className='bg-transparent text-neutral-300 font medium'>
-								Sign up
-							</Button>
-						</div>
-						<div>
-							<Button
-								onClick={authModal.onOpen}
-								className='bg-white px-6 py-2'>
-								Log In
-							</Button>
-						</div>
-					</>
+					{user ? (
+						<div>Logged in</div>
+					) : (
+						<>
+							<div>
+								<Button
+									onClick={authModal.onOpen}
+									className='bg-transparent text-neutral-300 font medium'>
+									Sign up
+								</Button>
+							</div>
+							<div>
+								<Button
+									onClick={authModal.onOpen}
+									className='bg-white px-6 py-2'>
+									Log In
+								</Button>
+							</div>
+						</>
+					)}
 				</div>
 			</div>
 			{children}
