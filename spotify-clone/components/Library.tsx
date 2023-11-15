@@ -13,8 +13,10 @@ const Library = () => {
 
 	const { user } = useUser();
 	const onClick = () => {
-		//if (!user) {
-		//return authModal.onOpen();
+		if (!user) {
+			return authModal.onOpen();
+		}
+
 		return uploadModal.onOpen();
 	};
 
