@@ -4,7 +4,7 @@ import { TbPlaylist } from "react-icons/tb";
 import { AiOutlinePlus } from "react-icons/ai";
 import useAuthModal from "../hooks/useAuthModal";
 import { useUser } from "../hooks/useUser";
-import toast from "react-hot-toast";
+
 import useUploadModal from "../hooks/useUploadModal";
 
 const Library = () => {
