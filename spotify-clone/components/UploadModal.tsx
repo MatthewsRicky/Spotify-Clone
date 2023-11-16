@@ -108,53 +108,50 @@ const UploadModal = () => {
 
 	return (
 		<Modal
-			title="Add a song"
-			description="Upload an mp3 file"
+			title='Add a song'
+			description='Upload an mp3 file'
 			isOpen={uploadModal.isOpen}
-			onChange={onChange}
-		>
+			onChange={onChange}>
 			<form
 				onSubmit={handleSubmit(onSubmit)}
-				className="flex flex-col gap-y-4"
-			>
+				className='flex flex-col gap-y-4'>
 				<Input
-					id="title"
+					id='title'
 					disabled={isLoading}
 					{...register("title", { required: true })}
-					placeholder="Song title"
+					placeholder='Song title'
 				/>
 				<Input
-					id="author"
+					id='author'
 					disabled={isLoading}
 					{...register("author", { required: true })}
-					placeholder="Song author"
+					placeholder='Song author'
 				/>
 				<div>
-					<div className="pb-1">Select a song file</div>
+					<div className='pb-1'>Select a song file</div>
 					<Input
-						placeholder="test"
+						placeholder='test'
 						disabled={isLoading}
-						type="file"
-						accept=".mp3"
-						id="song"
+						type='file'
+						accept='.mp3'
+						id='song'
 						{...register("song", { required: true })}
 					/>
 				</div>
 				<div>
-					<div className="pb-1">Select an image</div>
+					<div className='pb-1'>Select an image</div>
 					<Input
-						placeholder="test"
+						placeholder='test'
 						disabled={isLoading}
-						type="file"
-						accept="image/*"
-						id="image"
+						type='file'
+						accept='image/*'
+						id='image'
 						{...register("image", { required: true })}
 					/>
 				</div>
 				<Button
 					disabled={isLoading}
-					type="submit"
-				>
+					type='submit'>
 					Create
 				</Button>
 			</form>
