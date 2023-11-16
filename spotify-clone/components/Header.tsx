@@ -7,7 +7,7 @@ import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 
 import Button from "./Button";
-import useeAuthModal from "../hooks/useAuthModal";
+import useAuthModal from "../hooks/useAuthModal";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useUser } from "../hooks/useUser";
 import { FaUserAlt } from "react-icons/fa";
@@ -19,7 +19,7 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ children, className }) => {
-	const authModal = useeAuthModal();
+	const authModal = useAuthModal();
 	const router = useRouter();
 	const supabaseClient = useSupabaseClient();
 	const { user } = useUser();
