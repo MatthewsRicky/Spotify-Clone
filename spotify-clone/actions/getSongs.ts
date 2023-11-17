@@ -11,4 +11,11 @@ const getSongs = async (): Promise<Song[]> => {
 		.from("songs")
 		.select("*")
 		.order("created_at", { ascending: false });
+
+	if (error) {
+		console.log(error);
+	}
+	return (data as any) || [];
 };
+
+export default getSongs;
