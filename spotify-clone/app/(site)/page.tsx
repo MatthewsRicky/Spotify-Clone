@@ -36,7 +36,7 @@ export default async function Home() {
 				</div>
 				<div>
 					{songs.map((song) => (
-						<div>{song.title}</div>
+						<div key={null}>{song.title}</div>
 					))}
 				</div>
 			</div>
