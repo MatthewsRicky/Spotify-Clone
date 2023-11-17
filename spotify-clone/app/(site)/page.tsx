@@ -3,6 +3,8 @@ import Header from "@/src/components/Header";
 import ListItem from "@/src/components/ListItem";
 import getSongs from "@/src/actions/getSongs";
 
+import PageContent from "./components/PageContent";
+
 const font = Figtree({ subsets: ["latin"] });
 
 export default async function Home() {
@@ -34,11 +36,7 @@ export default async function Home() {
 				<div className='flex justify-between item-center'>
 					<h1 className='font-semibold text-2xl text-white'>Newest Songs</h1>
 				</div>
-				<div>
-					{songs.map((song) => (
-						<div key={null}>{song.title}</div>
-					))}
-				</div>
+				<PageContent />
 			</div>
 		</div>
 	);
