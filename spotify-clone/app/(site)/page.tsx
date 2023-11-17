@@ -2,7 +2,6 @@ import { Figtree } from "next/font/google";
 import Header from "@/src/components/Header";
 import ListItem from "@/src/components/ListItem";
 import getSongs from "@/src/actions/getSongs";
-
 import PageContent from "./components/PageContent";
 
 const font = Figtree({ subsets: ["latin"] });
