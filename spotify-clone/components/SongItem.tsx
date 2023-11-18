@@ -7,7 +7,7 @@ interface SongItemProps {
 	data: Song;
 	onClick: (id: string) => void;
 }
-const SongItem = () => {
+const SongItem: React.FC<SongItemProps> = ({ data, onClick }) => {
 	return <div>Song Item</div>;
 };
 
